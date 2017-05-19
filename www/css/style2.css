@@ -1,0 +1,100 @@
+#botones 
+{
+	position: fixed;
+	text-align: center;
+	z-index: 1000;
+	width: 100%;
+}
+#headerartificial 
+{
+	position: fixed;
+	text-align: center;
+	z-index: 1000;
+	width: 100%;
+	background-color: lightgray;
+
+}
+
+
+#boton{
+	width: 8em;
+	height: 3em;
+	margin: 0px;
+	background-color: white;
+	    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+#contentimgs
+{
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+}
+
+.posts
+{
+	float: left;
+	width: 9em;
+	margin:20px;
+	text-align: center;
+}
+
+
+.desc
+{
+	
+}
+
+#footer1
+{
+	height: 4em;
+}
+
+
+.side
+{
+	text-decoration: none;
+	padding-top: 10px;
+	width: 8em;
+	height: 3em;
+	margin: 0px;
+	float:left;
+	color:blue;
+}
+.titulopag
+{
+	padding-top: 10px;
+	font-size: 1.1em;
+	width: 8em;
+	height: 3em;
+	margin: 0px;
+	float: left;
+}
+
+.posts2
+{
+	float: left;
+	width: 100%;
+	margin:20px;
+}
+.img2
+{
+	float: left;
+	margin-right: 50px;
+
+}
+.desc2
+{
+	float: left;
+}
+
+
+
+.guiso
+{
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
