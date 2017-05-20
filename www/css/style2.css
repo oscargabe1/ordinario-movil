@@ -28,9 +28,10 @@
 #contentimgs
 {
 	margin-top: 40px;
-	text-align: center;
+	
 	width: 100%;
 	overflow: hidden;
+	padding-left: 10px;
 }
 
 .posts

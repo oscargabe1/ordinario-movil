@@ -24,14 +24,7 @@
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
+   
   </head>
   <body ng-app="starter">
 
@@ -61,52 +54,19 @@
 
            <div class="contenedorint">
 
-              <div class="posts">
-                <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-            
+            <ion-list>
+              <ion-item data-bind="foreach: producto_pedido">
 
-            <div class="posts">
-                <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-           
-
-            <div class="posts">
-               <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-           
-
-            <div class="posts">
-              <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-            
-
-            <div class="posts">
-               <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-            
-
-            <div class="posts">
-              <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-           
-
-            <div class="posts">
-              <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
-            
-
-            <div class="posts">
-                <a href="pag2.html"><img src="http://placehold.it/120x120"></a>
-                <p class="desc">Nombre</p>
-              </div>
+              <ion-thumbnail item-left>
+     <img src="" data-bind="attr:{src:Imagen} " width="20%">
+    </ion-thumbnail>
+                
+                <h4 class="pull-right" data-bind="text: Precio"></h4>
+                <h6 data-bind="text: Nombre"><strong></strong></h6>
+                <p data-bind="text: Descripcion"></p>
+             
+            </ion-item>
+          </ion-list>
             
               </div>
 
@@ -121,7 +81,22 @@
   <div class="title">Hacer Pedido</div>
 </div>
 
+
+ <!-- ionic/angularjs js -->
+   
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- <script src="cordova.js"></script>-->
+
+    <!-- your app's js -->
+     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/appi2.js"></script>
+    <script type='text/javascript' src='js/knockout-3.4.2.js'></script>
+    
+
   </body>
+
 </html>
 
 
