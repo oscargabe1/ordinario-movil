@@ -32,13 +32,13 @@
 
           <div id="botones">
             <div>
-            <button id="boton" class="button-balanced">
+            <button id="boton" class="button-balanced" data-bind="click :comidita">
               Comida
             </button>
-            <button id="boton" class="button-balanced">
+            <button id="boton" class="button-balanced" data-bind="click :bebida">
               Bebida
             </button>
-            <button id="boton" class="button-balanced">
+            <button id="boton" class="button-balanced" data-bind="click :postres">
               Postre
             </button>
             </div>
@@ -58,7 +58,7 @@
               <ion-item data-bind="foreach: producto_pedido">
 
               <ion-thumbnail item-left>
-     <img src="" data-bind="attr:{src:Imagen} " width="20%">
+     <button data-bind="click :$parent.guardarPEDIDO"><img src="" data-bind="attr:{src:Imagen} " width="20%"></button>
     </ion-thumbnail>
                 
                 <h4 class="pull-right" data-bind="text: Precio"></h4>
