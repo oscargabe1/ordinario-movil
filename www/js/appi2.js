@@ -17,6 +17,16 @@ $(function() {
 		});
 	};
 
+	function EnviarPEDIDO(pedido){
+		return $.ajax({
+			url: 'http://ipm.esy.es/public/pedir',
+			type:'POST',
+			dataType:'json',
+			data: pedido
+
+		})
+	}
+
 
 
 
@@ -26,6 +36,10 @@ $(function() {
 	ViewModel = function(){
 		var _self = this;
 		var temp=[];
+		var id_usuario=3;
+		var id_comida=0;
+		var id_bebida=0;
+		var id_postre=0;
 
 		_self.producto_pedido = ko.observableArray([]);
 
@@ -44,14 +58,24 @@ $(function() {
 				// 	_self.producto_pedido(res.datos);
 				// });
 		
+		_self.enviarPEDIDO= function(){
+			var datospedido={
+				idu: id_usuario,
+				idc: id_comida,
+				idb: id_bebida,
+				idp: id_postre,
+				tt:total
+			};
+
+		}
 
 		_self.guardarPEDIDO = function(datos){
 			
-			if(data.Categoria=="comida")
+			if(datos.Categoria=="comida")
 				temp[0]=datos;
-			if(data.Categoria=="bebida")
+			if(datos.Categoria=="bebida")
 				temp[1]=datos;
-			if(data.Categoria=="postre")
+			if(datos.Categoria=="postre")
 				temp[2]=datos;
 			console.log(temp);
 		}
